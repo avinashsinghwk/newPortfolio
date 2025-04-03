@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #f8fafc;
+    --foreground: #0f172a;
+    --primary: #2563eb;
+    --primary-light: #60a5fa;
+    --secondary: #4f46e5;
+    --accent: #f59e0b;
+
+    /* Section-specific colors */
+    --navbar-bg: #dbe3ff; /* Kept the same */
+--sidebar-bg: #f8fafc;
+--hero-bg: #eef2ff; /* Kept the same */
+--skills-bg: #e8f5fc; /* Updated for better sync */
+--projects-bg: #eef2ff; /* Soft blue for better distinction */
+--experience-bg: #eafafc; /* Balanced blue tone */
+--education-bg: #ebf9eb; /* Kept close to original */
+--contact-bg: #eef2ff; /* Slightly deeper purple for better contrast */
+
+  }
+
+  [data-theme="dark"] {
+    --background: #0f172a;
+    --foreground: #f8fafc;
+    --primary: #3b82f6;
+    --primary-light: #93c5fd;
+    --secondary: #6366f1;
+    --accent: #f59e0b;
+
+    /* Section-specific colors */
+    --navbar-bg: #0f172a; /* Kept the same */
+    --sidebar-bg: #111827;
+    --hero-bg: #1e293b; /* Kept the same */
+    --skills-bg: #233041; /* Darkened for better contrast */
+    --projects-bg: #252e3a; /* Deeper blue-gray for balance */
+    --experience-bg: #1c2838; /* More contrast while keeping harmony */
+    --education-bg: #212b39; /* Balanced with experience */
+    --contact-bg: #1b2535; /* Slightly lighter for better readability */
+    
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  ::selection {
+    @apply bg-primary-light bg-opacity-30;
+  }
+}
+
+/* Gradient Animation */
+.animate-gradient {
+  background-size: 200%;
+  animation: gradient 4s linear infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Background color animation */
+.hero-gradient {
+  background: radial-gradient(circle at top left, var(--primary) 0%, transparent 50%);
+  opacity: 0.1;
+  animation: gradient-move 8s linear infinite;
+}
+
+@keyframes gradient-move {
+  0% { transform: translateX(-20px); }
+  50% { transform: translateX(20px); }
+  100% { transform: translateX(-20px); }
+}
+
+/* Hero section animations */
+.hero-title {
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-description {
+  animation: fadeInUp 1s ease-out 0.2s backwards;
+}
+
+.hero-image {
+  animation: fadeInScale 1s ease-out 0.4s backwards;
+}
+
+/* Floating Animation */
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Fade-in animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Section transitions */
+.section-transition {
+  @apply transition-all duration-300;
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:scale-105 hover:shadow-xl;
+}
+
+/* Skill Icon Animation */
+.skill-icon {
+  animation: skillPop 0.5s ease-out backwards;
+}
+
+@keyframes skillPop {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Skill Card Shine Effect */
+.skill-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: 0.5s;
+}
+
+.skill-card:hover::before {
+  left: 100%;
+}
