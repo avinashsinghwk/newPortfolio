@@ -6,6 +6,7 @@ import { SkillSection } from './components/SkillSection';
 import { ExperienceSection } from './components/ExperienceSection';
 import { ContactSection } from './components/ContactSection';
 import { EducationSection } from './components/EducationSection';
+import ResumeSection from './components/ResumeSection';
 
 function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
@@ -37,6 +38,8 @@ function App() {
       
       {/* Skills Section */}
       <SkillSection />
+
+      <ResumeSection />
 
       {/* Education Section */}
       <EducationSection />
