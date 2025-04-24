@@ -28,7 +28,7 @@ export function HeroSection() {
             </span>
           </h1>
           <p className="text-lg sm:text-xl text-foreground/80 hero-description">
-            Full Stack Web Developer from Rafiganj, Bihar
+            Full Stack Web Developer from Aurangabad, Bihar
           </p>
           <p className="text-base sm:text-lg text-foreground/70 hero-description">
             Passionate about building dynamic, user-friendly web applications with cutting-edge technologies. 

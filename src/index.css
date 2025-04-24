@@ -25,6 +25,7 @@
     /* Balanced blue tone */
     --education-bg: #ebf9eb;
     /* Kept close to original */
+    --achievement-bg: #edeaf4;
     --contact-bg: #eef2ff;
     /* Slightly deeper purple for better contrast */
     --resume-bg: hsl(224, 100%, 97%);
@@ -53,6 +54,7 @@
     /* More contrast while keeping harmony */
     --education-bg: #212b39;
     /* Balanced with experience */
+    --achievement-bg: #071932;
     --contact-bg: #1b2535;
     /* Slightly lighter for better readability */
     --resume-bg: #2d3346;

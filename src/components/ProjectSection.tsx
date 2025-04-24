@@ -14,6 +14,16 @@ const projects = [
     },
   },
   {
+    title: "Apareemita Humanitarian Association",
+    description:
+      "The official website of AHA, crafted with a responsive design and dynamic multi-page layout.",
+    tech: ["React.js", "TypeScript", "Node.js", "TailwindCSS", "React-Route-Dom"],
+    image: "/apareemita.png",
+    links: {
+      website: "https://apareemita.netlify.app/",
+    },
+  },
+  {
     title: "Medium Blog App",
     description:
       "Blog application with user authentication, blog creation, and reading blogs section features.",

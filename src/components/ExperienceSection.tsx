@@ -13,12 +13,14 @@ export function ExperienceSection(){
         animate={{ opacity: 1, y: 0 }}
         className="p-6 rounded-lg bg-background shadow-lg card-hover"
       >
-        <h3 className="text-xl font-semibold">Web Developer</h3>
+        <h3 className="text-xl font-semibold">Full Stack Developer</h3>
         <p className="text-primary mb-2">Apareemita Humanitarians Association (NGO)</p>
         <p className="text-foreground/70 mb-2">Jan 2025 – Present</p>
         <ul className="list-disc list-inside text-foreground/70">
-          <li>Developed and deployed the organization's main website using TypeScript, Node.js, React, and Tailwind CSS</li>
-          <li>Lead technical initiatives to enhance the NGO's digital presence</li>
+          <li>Solely developed and deployed the organization’s main website using TypeScript, Node.js,
+          React, and Tailwind CSS</li>
+          <li>Led all technical efforts to boost the NGO’s digital presence and improve user experience
+          across devices.</li>
         </ul>
       </motion.div>
     </div>

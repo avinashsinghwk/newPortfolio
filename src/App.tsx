@@ -7,6 +7,7 @@ import { ExperienceSection } from './components/ExperienceSection';
 import { ContactSection } from './components/ContactSection';
 import { EducationSection } from './components/EducationSection';
 import ResumeSection from './components/ResumeSection';
+import { AchievementSection } from './components/AchievementSection';
 
 function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
@@ -43,6 +44,8 @@ function App() {
 
       {/* Education Section */}
       <EducationSection />
+
+      <AchievementSection />
 
       {/* Contact Section */}
       <ContactSection />
